@@ -6,3 +6,12 @@
 html {
     box-sizing: border-box;
 }
+body {
+    background-color: $mo;
+    div {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
