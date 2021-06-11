@@ -39,11 +39,18 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            publicPath: "./",
+                            publicPath: "../",
                         },
                     },
                     "css-loader",
-                    "sass-loader",
+                    "resolve-url-loader",
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: true,
+                            // sourceMapContents: false,
+                        },
+                    },
                 ],
             },
             {
@@ -64,4 +71,11 @@ module.exports = {
             filename: "assets / [name][contenthash].css",
         }),
     ],
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        historyApiFallback: true,
+        port: 3006,
+        open: true,
+    },
 };

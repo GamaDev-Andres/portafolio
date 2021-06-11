@@ -1,0 +1,160 @@
+// ESTILOS MENU
+.menu-principal {
+    box-sizing: border-box;
+    z-index: 999;
+    padding: 0 1rem;
+    background: rgb(10, 10, 15);
+    background: linear-gradient(
+        180deg,
+        rgba(10, 10, 15, 1) 35%,
+        rgb(2, 7, 110) 180%
+    );
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .contenedor-menu {
+        max-width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @include tablet {
+            justify-content: space-around;
+            div.enlaces-menu {
+                display: none;
+            }
+            div.menu-hamburguesa {
+                display: flex;
+            }
+        }
+        .logo {
+            display: inline-block;
+            text-align: center;
+            width: auto;
+            h1 {
+                margin: 0;
+                width: auto;
+                cursor: pointer;
+                color: $bl;
+                &:hover {
+                    transform: scale(1.1);
+                    color: $gc;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+        .menu-hamburguesa {
+            display: none;
+            i {
+                font-size: 30px;
+                color: $bl;
+            }
+        }
+        .enlaces-menu {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // justify-content: flex-end;
+            // gap: 8rem;
+            a {
+                &:hover {
+                    transform: scale(1.1);
+                    color: $gc;
+                    transition: all 0.3s ease;
+                }
+                text-decoration: none;
+                color: $bl;
+                font-size: 18px;
+            }
+        }
+    }
+    //FIN ESTILOS MENU
+
+    //INICIO ESTILOS PRESENTACION
+}
+.contenido-presentacion {
+    @include flex(row);
+    margin-top: 60px;
+    padding: 1rem;
+    color: $bl;
+    background: rgb(10, 10, 15);
+    background: linear-gradient(
+        180deg,
+        rgba(10, 10, 15, 1) 35%,
+        rgb(2, 7, 110) 180%
+    );
+    // min-height: 100vh;
+    min-height: 100%;
+    h2 {
+        margin: 0;
+    }
+    .presentacion {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        // flex-wrap: wrap;
+        gap: 5rem;
+        min-height: 100%;
+        @include desktop {
+            flex-direction: column-reverse;
+            gap: 0;
+            .nombre-descripcion,
+            .foto-profesion {
+                min-width: 100%;
+            }
+        }
+        .nombre-descripcion,
+        .foto-profesion {
+            padding: 1.5rem;
+            border-radius: 1rem;
+            height: 75%;
+            width: 50%;
+        }
+
+        div.foto-profesion {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            .contenedor-foto {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                padding: 15px;
+                background-image: url($url);
+                background-size: cover;
+            }
+            .contenedor-profesion {
+                border: 1px solid black;
+                padding: 1rem;
+                border-radius: 2rem;
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                background-color: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(100px);
+                box-shadow: 1px 4px 8px grey,
+                    -1px 0px 8px rgba(61, 61, 61, 0.582);
+                h3 {
+                    font-size: 30px;
+                    text-align: center;
+                    color: $bl;
+                    margin: 0;
+                }
+            }
+        }
+        .nombre-descripcion {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -1,17 +1,12 @@
-@import "./layout/header";
 @import "./utility/normalize";
 @import "./utility/variables";
 @import "./utility/mixins";
+@import "./layout/header";
 
 html {
     box-sizing: border-box;
+    font-family: "Patrick Hand", cursive;
 }
-body {
-    background-color: $mo;
-    div {
-        width: 100%;
-    }
-    img {
-        width: 100%;
-    }
+* {
+    box-sizing: border-box;
 }
