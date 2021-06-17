@@ -10,11 +10,11 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "[name][hash].js",
     },
+    mode: "production",
     resolve: {
         extensions: [".js"],
         // alias
     },
-    mode: "production",
     module: {
         rules: [
             {
@@ -42,18 +42,25 @@ module.exports = {
                             publicPath: "../",
                         },
                     },
+
+                    "css-loader",
+                    "resolve-url-loader",
+
                     {
-                        loader: "css-loader",
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: true,
+                            // sourceMapContents: false,
+                        },
                     },
-                    "sass-loader",
                 ],
             },
             {
                 test: /(png|jpe?g|svg|webp|woff|woff2)$/i,
                 type: "asset/resource",
-                use: {
-                    loader: "image-webpack-loader",
-                },
+                // use: {
+                //     loader: "image-webpack-loader",
+                // },
                 generator: {
                     filename: "./img/[hash][ext][query]",
                 },

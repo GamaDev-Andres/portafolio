@@ -1,14 +1,22 @@
 // ESTILOS MENU
-.menu-principal {
-    box-sizing: border-box;
-    z-index: 999;
-    padding: 0 1rem;
-    background: rgb(10, 10, 15);
-    background: linear-gradient(
-        180deg,
-        rgba(10, 10, 15, 1) 35%,
-        rgb(2, 7, 110) 180%
+body {
+    background: rgb(27, 0, 58);
+    background: radial-gradient(
+        circle,
+        rgba(27, 0, 58, 1) 19%,
+        rgba(0, 0, 0, 1) 89%
     );
+}
+.menu-principal {
+    z-index: 9999;
+    padding: 0 1rem;
+    background: rgb(27, 0, 58);
+    background: radial-gradient(
+        circle,
+        rgba(27, 0, 58, 1) 19%,
+        rgba(0, 0, 0, 1) 89%
+    );
+    opacity: 1;
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,6 +33,7 @@
             }
             div.menu-hamburguesa {
                 display: flex;
+                cursor: pointer;
             }
         }
         .logo {
@@ -32,6 +41,7 @@
             text-align: center;
             width: auto;
             h1 {
+                letter-spacing: 3px;
                 margin: 0;
                 width: auto;
                 cursor: pointer;
@@ -55,17 +65,18 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            // justify-content: flex-end;
-            // gap: 8rem;
+
             a {
                 &:hover {
                     transform: scale(1.1);
-                    color: $gc;
+                    color: rgba(74, 15, 236, 1);
                     transition: all 0.3s ease;
                 }
+                border-radius: 60px;
                 text-decoration: none;
                 color: $bl;
                 font-size: 18px;
+                padding: 1rem;
             }
         }
     }
@@ -74,17 +85,12 @@
     //INICIO ESTILOS PRESENTACION
 }
 .contenido-presentacion {
+    position: relative;
+    z-index: 9998;
     @include flex(row);
     margin-top: 60px;
     padding: 1rem;
     color: $bl;
-    background: rgb(10, 10, 15);
-    background: linear-gradient(
-        180deg,
-        rgba(10, 10, 15, 1) 35%,
-        rgb(2, 7, 110) 180%
-    );
-    // min-height: 100vh;
     min-height: 100%;
     h2 {
         margin: 0;
@@ -96,7 +102,6 @@
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        // flex-wrap: wrap;
         gap: 5rem;
         min-height: 100%;
         @include desktop {
@@ -142,7 +147,6 @@
                 h3 {
                     font-size: 30px;
                     text-align: center;
-                    color: $bl;
                     margin: 0;
                 }
             }
@@ -154,7 +158,30 @@
             align-items: center;
             h3 {
                 font-size: 30px;
+                color: #4a0fec;
             }
         }
     }
+}
+//particle js
+#particles-js {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -2;
+}
+.prueba {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.tecno-typed {
+    font-weight: bold;
+    color: #4a0fec;
+}
+.typed strong {
+    color: #4a0fec;
 }
