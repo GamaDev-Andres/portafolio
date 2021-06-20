@@ -1,0 +1,29 @@
+.proceso {
+    h2,
+    h3 {
+        text-align: center;
+        color: $ml;
+    }
+
+    .contenido-proceso {
+        margin-top: 30px;
+        border-top: 1px solid $bl;
+        @include grid(2, 3rem);
+        width: 80%;
+        margin: 0 auto;
+        @include tablet {
+            @include grid(1, 1rem);
+        }
+        .texto-proceso {
+            color: $bl;
+        }
+        .plataforma-proceso {
+            .lista-plataformas {
+                li {
+                    color: $bl;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

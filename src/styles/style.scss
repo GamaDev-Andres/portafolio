@@ -2,11 +2,27 @@
 @import "./utility/variables";
 @import "./utility/mixins";
 @import "./layout/header";
+@import "./layout/proceso";
+@import "./layout/tecnologias";
 
 html {
     box-sizing: border-box;
     font-family: "Patrick Hand", cursive;
+    scroll-behavior: smooth;
 }
 * {
     box-sizing: border-box;
+}
+section {
+    margin-top: 3rem !important;
+}
+p {
+    color: $bl;
+}
+h1,
+h2,
+h3,
+h4 {
+    color: $ml;
+    text-align: center;
 }

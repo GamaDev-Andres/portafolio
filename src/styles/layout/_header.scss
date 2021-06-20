@@ -21,11 +21,12 @@ body {
     top: 0;
     width: 100%;
     .contenedor-menu {
-        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;
         height: 60px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         @include tablet {
             justify-content: space-around;
             div.enlaces-menu {
@@ -88,10 +89,10 @@ body {
     position: relative;
     z-index: 9998;
     @include flex(row);
-    margin-top: 60px;
-    padding: 1rem;
+    // margin-top: 90px;
+    // padding: 1rem;
     color: $bl;
-    min-height: 100%;
+    min-height: 100vh;
     h2 {
         margin: 0;
     }
@@ -114,7 +115,7 @@ body {
         }
         .nombre-descripcion,
         .foto-profesion {
-            padding: 1.5rem;
+            // padding: 1.5rem;
             border-radius: 1rem;
             height: 75%;
             width: 50%;
@@ -126,6 +127,7 @@ body {
             justify-content: center;
             align-items: center;
             gap: 3rem;
+            margin-top: 5rem;
 
             .contenedor-foto {
                 width: 200px;
@@ -158,7 +160,7 @@ body {
             align-items: center;
             h3 {
                 font-size: 30px;
-                color: #4a0fec;
+                color: $ml;
             }
         }
     }
@@ -167,7 +169,7 @@ body {
 #particles-js {
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     min-width: 100%;
