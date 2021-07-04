@@ -89,8 +89,7 @@ body {
     position: relative;
     z-index: 9998;
     @include flex(row);
-    // margin-top: 90px;
-    // padding: 1rem;
+
     color: $bl;
     min-height: 100vh;
     h2 {
@@ -115,7 +114,6 @@ body {
         }
         .nombre-descripcion,
         .foto-profesion {
-            // padding: 1.5rem;
             border-radius: 1rem;
             height: 75%;
             width: 50%;
@@ -138,7 +136,6 @@ body {
                 background-size: cover;
             }
             .contenedor-profesion {
-                border: 1px solid black;
                 padding: 1rem;
                 border-radius: 2rem;
                 border: 1px solid rgba(255, 255, 255, 0.6);

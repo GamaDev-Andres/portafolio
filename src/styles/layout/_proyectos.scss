@@ -1,0 +1,125 @@
+.contenedor-proyectos {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid $bl;
+    .carrusel-contenedor {
+        position: relative;
+        .elemento-carrusel {
+            &:hover {
+                .imagen-proyecto {
+                    .descripcion-proyecto {
+                        transform: translateY(0%);
+                        background-color: rgba($ng, 0.5);
+                        // transition: all 0.3s ease;
+                        p {
+                            transform: translateY(0%);
+                        }
+                        // top: 50%;
+                    }
+                }
+            }
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 0 10px;
+            background-color: rgba($mc, 0.2);
+            border: 1px solid rgba($mo, 0.6);
+            border-radius: 5px;
+            .informacion-proyecto {
+                backdrop-filter: blur(20px);
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 100%;
+                height: 100%;
+                border-radius: 0 0 5px 5px;
+                @include flex(row);
+                flex-wrap: wrap;
+                gap: 1rem;
+                div {
+                    padding: 0.5rem;
+                }
+                .tec-usadas {
+                    span {
+                        display: inline-block;
+                        padding: 10px;
+                        font-size: 12px;
+                        background-color: rgba($mo, 0.5);
+                        border-radius: 100px;
+                    }
+                }
+            }
+            .imagen-proyecto {
+                position: relative;
+                @include flex(row);
+
+                img {
+                    object-fit: cover;
+                }
+                .descripcion-proyecto {
+                    position: absolute;
+                    padding: 1rem;
+                    transform: translateY(-200%);
+                    transition: all 0.5s ease;
+                    width: 100%;
+                    height: 100%;
+                    @include flex(column);
+                    gap: 10px;
+                    p {
+                        text-align: center;
+                        margin: 0;
+                    }
+                    .enlaces-proyecto {
+                        @include flex(row);
+                        gap: 10px;
+                        a {
+                            display: inline-block;
+                            padding: 10px;
+                            background-color: $mo;
+                            border-radius: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        .carrusel-anterior,
+        .carrusel-siguiente {
+            &:hover {
+                background-color: rgba($ng, 0.5);
+                transition: all 0.3s linear;
+            }
+            position: absolute;
+            display: block;
+            width: 30px;
+            border: none;
+            bottom: 0;
+            top: 0;
+            cursor: pointer;
+            text-align: center;
+            line-height: 30px;
+            background-color: transparent;
+            color: $bl;
+        }
+        .carrusel-anterior {
+            left: -30px;
+        }
+        .carrusel-siguiente {
+            right: -30px;
+        }
+    }
+    .indicadores-carrusel .glider-dot {
+        display: block;
+        border-radius: 0;
+        height: 4px;
+        width: 30px;
+        opacity: 0.2;
+        background-color: $bl;
+        &:hover {
+            opacity: 0.5;
+        }
+        &.active {
+            opacity: 1;
+        }
+    }
+}

@@ -4,6 +4,7 @@
 @import "./layout/header";
 @import "./layout/proceso";
 @import "./layout/tecnologias";
+@import "./layout/proyectos";
 
 html {
     box-sizing: border-box;
@@ -25,4 +26,27 @@ h3,
 h4 {
     color: $ml;
     text-align: center;
+}
+h3 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 3rem;
+}
+// section {
+//     border-top: 1px solid $bl;
+//     & > div {
+//         // width: 80%;
+//         // margin: 0 auto;
+//     }
+// }
+span {
+    color: $bl;
+}
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: $bl;
 }

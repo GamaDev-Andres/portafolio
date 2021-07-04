@@ -1,12 +1,6 @@
 .tecnologias {
-    // border-top: 1px solid $bl;
     margin: 0 auto;
     width: 80%;
-    h2 {
-        color: $ml;
-        text-align: center;
-        font-size: 3rem;
-    }
 }
 //cubo
 .contenedor-cubo {
@@ -191,17 +185,17 @@
             text-align: center;
         }
         .contenedor-imgs {
-            @include grid(4, 2rem);
-            grid-auto-rows: minmax(100px, 200px);
+            @include grid(8, 2rem);
+            grid-auto-rows: minmax(50px, 100px);
             @include desktop {
-                @include grid(3, 2rem);
+                @include grid(6, 2rem);
             }
             @include tablet {
-                @include grid(2, 2rem);
+                @include grid(4, 1rem);
             }
             @include telefono {
-                @include grid(2, 1rem);
-                grid-auto-rows: minmax(50px, 150px);
+                @include grid(4, 1rem);
+                grid-auto-rows: minmax(30px, 50px);
             }
             .tecnologia {
                 width: 100%;
@@ -250,7 +244,6 @@
                     background-position: center;
                 }
                 &.sass {
-                    // background-color: $bl;
                     background-image: url("../../img/imgsas.png");
                     background-size: cover;
                     background-position: center;
