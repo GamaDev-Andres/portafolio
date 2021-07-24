@@ -21,10 +21,11 @@
             }
             display: flex;
             flex-flow: column nowrap;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 10px;
             margin: 0 10px;
+            gap: 0;
             background-color: rgba($mc, 0.2);
             border: 1px solid rgba($mo, 0.6);
             border-radius: 5px;
@@ -34,28 +35,39 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 0 0 5px 5px;
-                @include flex(row);
+                @include flex(column);
+                justify-content: center;
                 flex-wrap: wrap;
-                gap: 1rem;
-                div {
-                    padding: 0.5rem;
+
+                h4 {
+                    font-size: 1.25rem;
+                    margin: 10px;
                 }
+
                 .tec-usadas {
+                    padding: 0.5rem;
                     span {
                         display: inline-block;
                         padding: 10px;
                         font-size: 12px;
                         background-color: rgba($mo, 0.5);
                         border-radius: 100px;
+                        transition: background-color 300ms;
+                        &:hover {
+                            background-color: $mo;
+                            // color: $ml;
+                        }
                     }
                 }
             }
             .imagen-proyecto {
                 position: relative;
                 @include flex(row);
-
+                min-height: 70%;
                 img {
                     object-fit: cover;
+                    width: 100%;
+                    height: 100%;
                 }
                 .descripcion-proyecto {
                     position: absolute;
@@ -65,7 +77,7 @@
                     width: 100%;
                     height: 100%;
                     @include flex(column);
-                    gap: 10px;
+                    gap: 1rem;
                     p {
                         text-align: center;
                         margin: 0;
@@ -76,8 +88,12 @@
                         a {
                             display: inline-block;
                             padding: 10px;
-                            background-color: $mo;
+                            background-color: rgba($mc, 0.4);
                             border-radius: 100px;
+                            transition: background-color 0.3s;
+                            &:hover {
+                                background-color: $mo;
+                            }
                         }
                     }
                 }
