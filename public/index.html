@@ -1,413 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="shortcut icon"
-            href="../src/img/portfolio.ico"
-            type="image/x-icon"
-        />
-        <!-- GLIDER JS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <title>GamaWeb</title>
-    </head>
-    <body>
-        <div id="particles-js"></div>
-        <header class="header">
-            <nav class="menu-principal" role="navigation">
-                <div class="contenedor-menu">
-                    <div class="logo">
-                        <h1>GamaDev</h1>
-                    </div>
-                    <div class="menu-hamburguesa">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <div class="enlaces-menu">
-                        <a href="index.html">Inicio</a>
-                        <a href="#tecnologias">Tecnologias</a>
-                        <a href="#proceso">Proceso</a>
-                        <a href="#proyectos">Proyectos</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="contenido-presentacion">
-                <div class="presentacion">
-                    <div class="nombre-descripcion">
-                        <h3 class="nombre">Acerca de mi</h3>
-                        <div class="descripcion">
-                            <strong>Quien soy:</strong>
-                            <p>
-                                Mi nombre es Andres Gama actualmente soy
-                                estudiante autónomo, cuya pasión por la
-                                tecnología surgió por los videojuegos, tengo 20
-                                años y resido en Colombia-Meta.
-                            </p>
-                            <p>
-                                Siempre me apasiono ponerle retos a mi mente,
-                                por ello la programación es algo que disfruto,
-                                pues hay infinidad de que cosas que aprender y
-                                gracias a esto, hay infinidad de cosas por
-                                crear.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="foto-profesion">
-                        <div class="contenedor-foto"></div>
-                        <div class="contenedor-profesion">
-                            <h3><span class="typed"></span></h3>
-                            <p>
-                                Las tecnologias que actualmente manejo son
-                                <span class="tecnologias"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../src/img/portfolio.ico"
+      type="image/x-icon"
+    />
+    <!-- GLIDER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GamaWeb</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <header class="header">
+      <nav class="menu-principal" role="navigation">
+        <div class="contenedor-menu">
+          <div class="logo">
+            <h1>GamaDev</h1>
+          </div>
+          <div class="menu-hamburguesa">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="enlaces-menu">
+            <a href="index.html">Inicio</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#proceso">Proceso</a>
+            <button type="button" class="btn-cerrar">Cerrar</button>
+          </div>
+        </div>
+      </nav>
+      <div class="contenido-presentacion">
+        <div class="presentacion">
+          <div class="nombre-descripcion">
+            <h3 class="nombre">Acerca de mi</h3>
+            <div class="descripcion">
+              <strong>Quien soy:</strong>
+              <p>
+                Mi nombre es Andres Gama actualmente soy estudiante autónomo,
+                cuya pasión por la tecnología surgió por los videojuegos, tengo
+                20 años y resido en Colombia-Meta.
+              </p>
+              <p>
+                Siempre me apasiono ponerle retos a mi mente, por ello la
+                programación es algo que disfruto, pues hay infinidad de que
+                cosas que aprender y gracias a esto, hay infinidad de cosas por
+                crear.
+              </p>
             </div>
-        </header>
-        <section id="tecnologias" class="tecnologias">
-            <h2>TECNOLOGIAS</h2>
-            <div class="contenedor-tecnologias">
-                <div class="texto-tecnologias">
-                    <h3>Tecnologias con las que trabajo</h3>
-                    <div class="contenedor-imgs">
-                        <div class="tecnologia html">
-                            <div class="tecnologia-hidden">
-                                <h4>HTML</h4>
-                            </div>
-                        </div>
-                        <div class="tecnologia css">
-                            <div class="tecnologia-hidden">
-                                <h4>CSS</h4>
-                            </div>
-                        </div>
-                        <div class="tecnologia js">
-                            <div class="tecnologia-hidden">
-                                <h4>JAVASCRIPT</h4>
-                            </div>
-                        </div>
-                        <div class="tecnologia webpack">
-                            <div class="tecnologia-hidden">
-                                <h4>WEBPACK</h4>
-                            </div>
-                        </div>
-                        <div class="tecnologia sass">
-                            <div class="tecnologia-hidden">
-                                <h4>SASS</h4>
-                            </div>
-                        </div>
-                        <div class="tecnologia python">
-                            <div class="tecnologia-hidden">
-                                <h4>PYTHON</h4>
-                            </div>
-                        </div>
-                        <div class="tecnologia mysql">
-                            <div class="tecnologia-hidden">
-                                <h4>MYSQL</h4>
-                            </div>
-                        </div>
-                        <div class="tecnologia git">
-                            <div class="tecnologia-hidden">
-                                <h4>GIT</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor-cubo">
-                    <div class="cubo">
-                        <!-- ININCIO SEGUNDO CUBO -->
-                        <div class="segundo-cubo">
-                            <div class="lado2 frente2">
-                                <div class="box2">
-                                    <img src="../src/img/mysql.png" />
-                                </div>
-                            </div>
-                            <div class="lado2 derecha2">
-                                <div class="box2">
-                                    <img src="../src/img/python.png" />
-                                </div>
-                            </div>
-                            <div class="lado2 izquierda2">
-                                <div class="box2">
-                                    <img src="../src/img/webpack.png" />
-                                </div>
-                            </div>
-                            <div class="lado2 atras2">
-                                <div class="box2">
-                                    <img src="../src/img/imgsas.png" />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- FIN SEGUNDO CUBO -->
-                        <div class="lado frente">
-                            <div class="box">
-                                <img src="../src/img/css3.png" />
-                            </div>
-                        </div>
-                        <div class="lado derecha">
-                            <div class="box">
-                                <img src="../src/img/javascript.png" />
-                            </div>
-                        </div>
-                        <div class="lado izquierda">
-                            <div class="box">
-                                <img src="../src/img/html5fondo.jpg" />
-                            </div>
-                        </div>
-                        <div class="lado atras">
-                            <div class="box">
-                                <img src="../src/img/git.png" />
-                            </div>
-                        </div>
-                        <div class="lado abajo"></div>
-                        <div class="lado sombra"></div>
-                    </div>
-                </div>
+          </div>
+          <div class="foto-profesion">
+            <div class="contenedor-foto"></div>
+            <div class="contenedor-profesion">
+              <h3><span class="typed"></span></h3>
+              <p>
+                Las tecnologías que actualmente manejo son
+                <span class="tecnologias"></span>
+              </p>
             </div>
-        </section>
-        <!-- INICIO PROYECTOS -->
-        <section class="proyectos" id="proyectos">
-            <h2>PROYECTOS</h2>
-            <div class="contenedor-proyectos">
-                <div class="carrusel-contenedor">
-                    <button arial-label="Anterior" class="carrusel-anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div class="lista-carrusel">
-                        <div class="elemento-carrusel">
-                            <div class="imagen-proyecto">
-                                <img src="../src/img/proyecto1.png" alt="" />
-                                <div class="descripcion-proyecto">
-                                    <p>
-                                        Consulto API de videojuegos, le doy
-                                        interaccion con buscador y filtrado
-                                    </p>
-                                    <div class="enlaces-proyecto">
-                                        <a
-                                            href="https://github.com/GamaDev-Andres/FindYourGames"
-                                            target="_blank"
-                                            >Codigo</a
-                                        ><a
-                                            href="https://findyourgames.netlify.app/"
-                                            target="_blank"
-                                            >Sitio</a
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="informacion-proyecto">
-                                <h4>Findyourgames</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="tecnologias" class="tecnologias">
+      <h2>TECNOLOGIAS</h2>
+      <div class="contenedor-tecnologias">
+        <div class="texto-tecnologias">
+          <div class="contenedor-imgs">
+            <div class="tecnologia html">
+              <div class="tecnologia-hidden">
+                <h4>HTML</h4>
+              </div>
+            </div>
+            <div class="tecnologia css">
+              <div class="tecnologia-hidden">
+                <h4>CSS</h4>
+              </div>
+            </div>
+            <div class="tecnologia js">
+              <div class="tecnologia-hidden">
+                <h4>JAVASCRIPT</h4>
+              </div>
+            </div>
+            <div class="tecnologia webpack">
+              <div class="tecnologia-hidden">
+                <h4>WEBPACK</h4>
+              </div>
+            </div>
+            <div class="tecnologia sass">
+              <div class="tecnologia-hidden">
+                <h4>SASS</h4>
+              </div>
+            </div>
+            <div class="tecnologia react">
+              <div class="tecnologia-hidden">
+                <h4>REACT</h4>
+              </div>
+            </div>
+            <div class="tecnologia firebase">
+              <div class="tecnologia-hidden">
+                <h4>FIREBASE</h4>
+              </div>
+            </div>
+            <div class="tecnologia git">
+              <div class="tecnologia-hidden">
+                <h4>GIT</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INICIO PROYECTOS -->
+    <section class="proyectos" id="proyectos">
+      <h2>PROYECTOS</h2>
+      <div class="contenedor-proyectos">
+        <div class="carrusel-contenedor">
+          <button arial-label="Anterior" class="carrusel-anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="lista-carrusel">
+            <div class="elemento-carrusel">
+              <div class="imagen-proyecto">
+                <img src="../src/img/proyecto1.png" alt="" />
+                <div class="descripcion-proyecto">
+                  <p>
+                    Consulto API de videojuegos, le doy interaccion con buscador
+                    y filtrado
+                  </p>
+                  <div class="enlaces-proyecto">
+                    <a
+                      href="https://github.com/GamaDev-Andres/FindYourGames"
+                      target="_blank"
+                      >Codigo</a
+                    ><a
+                      href="https://findyourgames.netlify.app/"
+                      target="_blank"
+                      >Sitio</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="informacion-proyecto">
+                <h4>Findyourgames</h4>
 
-                                <div class="tec-usadas">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JAVASCRIPT</span>
-                                    <span>GULP</span>
-                                    <span>SASS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elemento-carrusel">
-                            <div class="imagen-proyecto">
-                                <img
-                                    src="https://picsum.photos/1000/600?random"
-                                    alt=""
-                                />
-                                <div class="descripcion-proyecto">
-                                    <p>
-                                        Consulto API de razas de perros y le
-                                        agrego un buscador
-                                    </p>
-                                    <div class="enlaces-proyecto">
-                                        <a href="">Codigo</a
-                                        ><a href="">Sitio</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="informacion-proyecto">
-                                <h4>Adopcion de Perros</h4>
-                                <div class="tec-usadas">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JAVASCRIPT</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elemento-carrusel">
-                            <div class="imagen-proyecto">
-                                <img
-                                    src="https://picsum.photos/1000/600?random"
-                                    alt=""
-                                />
-                                <div class="descripcion-proyecto">
-                                    <p>
-                                        Consulto API de videojuegos, le doy
-                                        interaccion con buscador y filtrado
-                                    </p>
-                                    <div class="enlaces-proyecto">
-                                        <a href="">Codigo</a
-                                        ><a href="">Sitio</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="informacion-proyecto">
-                                <h4>Titulo Proyecto</h4>
-                                <div class="tec-usadas">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JAVASCRIPT</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elemento-carrusel">
-                            <div class="imagen-proyecto">
-                                <img
-                                    src="https://picsum.photos/1000/600?random"
-                                    alt=""
-                                />
-                                <div class="descripcion-proyecto">
-                                    <p>
-                                        Consulto API de videojuegos, le doy
-                                        interaccion con buscador y filtrado
-                                    </p>
-                                    <div class="enlaces-proyecto">
-                                        <a href="">Codigo</a
-                                        ><a href="">Sitio</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="informacion-proyecto">
-                                <h4>Titulo Proyecto</h4>
-                                <div class="tec-usadas">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JAVASCRIPT</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elemento-carrusel">
-                            <div class="imagen-proyecto">
-                                <img
-                                    src="https://picsum.photos/1000/600?random"
-                                    alt=""
-                                />
-                                <div class="descripcion-proyecto">
-                                    <p>
-                                        Consulto API de videojuegos, le doy
-                                        interaccion con buscador y filtrado
-                                    </p>
-                                    <div class="enlaces-proyecto">
-                                        <a href="">Codigo</a
-                                        ><a href="">Sitio</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="informacion-proyecto">
-                                <h4>Titulo Proyecto</h4>
-                                <div class="tec-usadas">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JAVASCRIPT</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elemento-carrusel">
-                            <div class="imagen-proyecto">
-                                <img
-                                    src="https://picsum.photos/1000/600?random"
-                                    alt=""
-                                />
-                                <div class="descripcion-proyecto">
-                                    <p>
-                                        Consulto API de videojuegos, le doy
-                                        interaccion con buscador y filtrado
-                                    </p>
-                                    <div class="enlaces-proyecto">
-                                        <a href="">Codigo</a
-                                        ><a href="">Sitio</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="informacion-proyecto">
-                                <h4>Titulo Proyecto</h4>
-                                <div class="tec-usadas">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JAVASCRIPT</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button arial-label="Siguiente" class="carrusel-siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <div class="tec-usadas">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JAVASCRIPT</span>
+                  <span>GULP</span>
+                  <span>SASS</span>
                 </div>
-                <div role="tablist" class="indicadores-carrusel"></div>
+              </div>
             </div>
-        </section>
-        <!-- FIN PROYECTOS -->
-        <!--inicio seccion proceso -->
-        <section id="proceso" class="proceso">
-            <h2>PROCESO</h2>
-            <div class="contenido-proceso">
-                <div class="texto-proceso">
-                    <h3>Mi Proceso De Aprendizaje</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Commodi id enim quam sit, animi laborum mollitia
-                        ab nemo delectus labore ullam consequuntur illum in
-                        expedita quisquam corporis qui ad eum!
-                    </p>
+            <div class="elemento-carrusel">
+              <div class="imagen-proyecto">
+                <img src="../src/img/imagepelisOMDB.png" alt="MispelisOMDB" />
+                <div class="descripcion-proyecto">
+                  <p>
+                    Consulto API de IMDB y genero interacción con sus endpoints
+                  </p>
+                  <div class="enlaces-proyecto">
+                    <a
+                      target="_blank"
+                      href="https://github.com/GamaDev-Andres/PeliculasOMDB"
+                      >Código</a
+                    ><a target="_blank" href="https://afmispelisgi.netlify.app/"
+                      >Sitio</a
+                    >
+                  </div>
                 </div>
-                <div class="plataforma-proceso">
-                    <h3>Plataformas en las que he aprendido.</h3>
-                    <ul class="lista-plataformas">
-                        <li>Udemy</li>
-                        <li>Platzi</li>
-                        <li>MDN web docs</li>
-                        <li>youtube</li>
-                    </ul>
+              </div>
+              <div class="informacion-proyecto">
+                <h4>MisPelis IMDB</h4>
+                <div class="tec-usadas">
+                  <span>HTML</span>
+                  <span>SASS</span>
+                  <span>WEBPACK</span>
+                  <span>JAVASCRIPT</span>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- fin de seccion proceso -->
-        <!-- INICIO FOOTER -->
-        <footer class="footer">
-            <div class="contenedor-footer"></div>
-        </footer>
-        <!-- FIN FOOTER -->
+            <div class="elemento-carrusel">
+              <div class="imagen-proyecto">
+                <img src="../src/img/reactFirebase.png" alt="galeria web" />
+                <div class="descripcion-proyecto">
+                  <p>Implemento galería Web, en donde autentico firebase</p>
+                  <div class="enlaces-proyecto">
+                    <a
+                      target="_blank"
+                      href="https://github.com/GamaDev-Andres/react-galeria"
+                      >Codigo</a
+                    ><a target="_blank" href="https://practica-galeria.web.app/"
+                      >Sitio</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="informacion-proyecto">
+                <h4>Galería web</h4>
+                <div class="tec-usadas">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>REACT</span>
+                  <span>FIREBASE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button arial-label="Siguiente" class="carrusel-siguiente">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div role="tablist" class="indicadores-carrusel"></div>
+      </div>
+    </section>
+    <!-- FIN PROYECTOS -->
+    <!--inicio seccion proceso -->
+    <section id="proceso" class="proceso">
+      <h2>PROCESO</h2>
+      <div class="contenido-proceso">
+        <div class="texto-proceso">
+          <h3>Mi Proceso De Aprendizaje</h3>
+          <p>
+            Inicie con pequeños cursos y blogs de programación en YouTube,
+            posteriormente me di cuenta de que este mundo de verdad me
+            interesaba y a pesar de que lo miraba complicado ... debía
+            intentarlo entonces me aventuré a profundizar y empecé a conocer
+            plataformas como Udemy, Platzi etc...
+          </p>
+        </div>
+        <div class="plataforma-proceso">
+          <h3>Plataformas en las que he aprendido.</h3>
+          <ul class="lista-plataformas">
+            <li>Udemy</li>
+            <li>Platzi</li>
+            <li>MDN web docs</li>
+            <li>youtube</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- fin de seccion proceso -->
+    <!-- INICIO FOOTER -->
+    <footer id="footer">
+      <div class="contenedor-footer">
+        <p>Hecho con 💜 por Andres Gama 🤓</p>
+      </div>
+    </footer>
+    <!-- FIN FOOTER -->
 
-        <!-- SCRIPT DE TYPED -->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-            integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <!--SCRIPT DE PARTICULAS-->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
-            integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <!-- GLIDER JS -->
-        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-    </body>
+    <!-- SCRIPT DE TYPED -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--SCRIPT DE PARTICULAS-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+      integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- GLIDER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+  </body>
 </html>

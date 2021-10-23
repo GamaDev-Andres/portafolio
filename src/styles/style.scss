@@ -5,33 +5,34 @@
 @import "./layout/proceso";
 @import "./layout/tecnologias";
 @import "./layout/proyectos";
+@import "./layout/footer";
 
 html {
-    box-sizing: border-box;
-    font-family: "Patrick Hand", cursive;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Patrick Hand", cursive;
+  scroll-behavior: smooth;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 section {
-    margin-top: 3rem !important;
+  margin-top: 3rem !important;
 }
 p {
-    color: $bl;
+  color: $bl;
 }
 h1,
 h2,
 h3,
 h4 {
-    color: $ml;
-    text-align: center;
+  color: $ml;
+  text-align: center;
 }
 h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 h2 {
-    font-size: 3rem;
+  font-size: 2rem;
 }
 // section {
 //     border-top: 1px solid $bl;
@@ -41,12 +42,12 @@ h2 {
 //     }
 // }
 span {
-    color: $bl;
+  color: $bl;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 a {
-    text-decoration: none;
-    color: $bl;
+  text-decoration: none;
+  color: $bl;
 }

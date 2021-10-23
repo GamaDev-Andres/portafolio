@@ -1,269 +1,190 @@
 .tecnologias {
-    margin: 0 auto;
-    width: 80%;
+  margin: 0 auto;
+  width: 80%;
 }
 //cubo
 .contenedor-cubo {
-    height: 300px;
-    width: 300px;
-    perspective: 1000px;
-    @include flex(row);
-    margin: 0px auto;
-    cursor: pointer;
-    @include tablet {
-        height: 200px;
-        width: 200px;
-    }
-    .lado {
-        position: absolute;
-        transform-style: preserve-3d;
-        height: 100%;
-        width: 100%;
-        .box {
-            height: 100%;
-            width: 100%;
-            transition: 1.5s;
-            transform-origin: bottom;
-            background-color: $mo;
+  height: 300px;
+  width: 300px;
+  perspective: 1000px;
 
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-    .frente {
-        transform: rotateY(0deg) translateZ(100px);
-        @include tablet {
-            transform: rotateY(0deg) translateZ(75px);
-        }
-        @include telefono {
-            transform: rotateY(0deg) translateZ(50px);
-        }
-    }
-    .derecha {
-        transform: rotateY(90deg) translateZ(100px);
-        @include tablet {
-            transform: rotateY(90deg) translateZ(75px);
-        }
-        @include telefono {
-            transform: rotateY(90deg) translateZ(50px);
-        }
-    }
-    .izquierda {
-        transform: rotateY(-90deg) translateZ(100px);
-        @include tablet {
-            transform: rotateY(-90deg) translateZ(75px);
-        }
-        @include telefono {
-            transform: rotateY(-90deg) translateZ(50px);
-        }
-    }
-    .atras {
-        transform: rotateY(180deg) translateZ(100px);
-        @include tablet {
-            transform: rotateY(180deg) translateZ(75px);
-        }
-        @include telefono {
-            transform: rotateY(180deg) translateZ(50px);
-        }
-    }
-    .abajo {
-        transform: rotateX(-90deg) translateZ(100px);
-        @include tablet {
-            transform: rotateX(-90deg) translateZ(75px);
-        }
-        @include telefono {
-            transform: rotateX(-90deg) translateZ(50px);
-        }
-    }
-    .sombra {
-        transform: rotateX(-90deg) translateZ(150px);
-        @include tablet {
-            transform: rotateX(-90deg) translateZ(75px);
-        }
-        @include telefono {
-            transform: rotateX(-90deg) translateZ(50px);
-        }
-        background-color: rgb(53, 35, 61);
-        box-shadow: 3px 3px 30px $mo;
-    }
-}
-
-.cubo {
+  transform: scale(0.7);
+  @include flex(row);
+  margin: 0px auto;
+  cursor: pointer;
+  @include tablet {
     height: 200px;
     width: 200px;
+  }
+  .lado {
+    position: absolute;
     transform-style: preserve-3d;
-    animation: rotar 10s linear infinite;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+    .box {
+      height: 100%;
+      width: 100%;
+      transition: 1.5s;
+      transform-origin: bottom;
+      background-color: $mo;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .frente {
+    transform: rotateY(0deg) translateZ(100px);
     @include tablet {
-        height: 150px;
-        width: 150px;
+      transform: rotateY(0deg) translateZ(75px);
     }
     @include telefono {
-        height: 100px;
-        width: 100px;
+      transform: rotateY(0deg) translateZ(50px);
     }
-    &:hover .box {
-        transform: rotateX(-85deg);
+  }
+  .derecha {
+    transform: rotateY(90deg) translateZ(100px);
+    @include tablet {
+      transform: rotateY(90deg) translateZ(75px);
     }
-    .segundo-cubo {
-        width: 150px;
-        height: 150px;
-
-        position: absolute;
-        @include telefono {
-            width: 75px;
-            height: 75px;
-        }
-
-        .lado2 {
-            position: absolute;
-            transform-style: preserve-3d;
-            height: 100%;
-            width: 100%;
-            .box2 {
-                height: 100%;
-                width: 100%;
-                transition: 1.5s;
-                transform-origin: bottom;
-                background-color: $mo;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-        .frente2 {
-            transform: rotateY(0deg) translateZ(75px);
-            @include telefono {
-                transform: rotateY(0deg) translateZ(37.5px);
-            }
-        }
-        .derecha2 {
-            transform: rotateY(90deg) translateZ(75px);
-            @include telefono {
-                transform: rotateY(90deg) translateZ(37.5px);
-            }
-        }
-        .izquierda2 {
-            transform: rotateY(-90deg) translateZ(75px);
-            @include telefono {
-                transform: rotateY(-90deg) translateZ(37.5px);
-            }
-        }
-        .atras2 {
-            transform: rotateY(180deg) translateZ(75px);
-            @include telefono {
-                transform: rotateY(180deg) translateZ(37.5px);
-            }
-        }
+    @include telefono {
+      transform: rotateY(90deg) translateZ(50px);
     }
-}
-@keyframes rotar {
-    0% {
-        transform: rotateY(0deg);
+  }
+  .izquierda {
+    transform: rotateY(-90deg) translateZ(100px);
+    @include tablet {
+      transform: rotateY(-90deg) translateZ(75px);
     }
-    100% {
-        transform: rotateY(360deg);
+    @include telefono {
+      transform: rotateY(-90deg) translateZ(50px);
     }
+  }
+  .atras {
+    transform: rotateY(180deg) translateZ(100px);
+    @include tablet {
+      transform: rotateY(180deg) translateZ(75px);
+    }
+    @include telefono {
+      transform: rotateY(180deg) translateZ(50px);
+    }
+  }
+  .abajo {
+    transform: rotateX(-90deg) translateZ(100px);
+    @include tablet {
+      transform: rotateX(-90deg) translateZ(75px);
+    }
+    @include telefono {
+      transform: rotateX(-90deg) translateZ(50px);
+    }
+  }
+  .sombra {
+    transform: rotateX(-90deg) translateZ(150px);
+    @include tablet {
+      transform: rotateX(-90deg) translateZ(75px);
+    }
+    @include telefono {
+      transform: rotateX(-90deg) translateZ(50px);
+    }
+    background-color: rgb(53, 35, 61);
+    box-shadow: 3px 3px 30px $mo;
+  }
 }
 
 .contenedor-tecnologias {
-    border-top: 1px solid $bl;
-    @include grid(1, 3rem);
+  border-top: 1px solid $bl;
+  @include grid(1, 3rem);
 
-    .texto-tecnologias {
-        h3 {
-            color: $ml;
-            text-align: center;
+  .texto-tecnologias {
+    .contenedor-imgs {
+      margin-top: 2rem;
+      @include grid(8, 2rem);
+      grid-auto-rows: minmax(50px, 100px);
+      @include desktop {
+        @include grid(6, 2rem);
+      }
+      @include tablet {
+        @include grid(4, 1rem);
+      }
+      @include telefono {
+        @include grid(4, 1rem);
+        grid-auto-rows: minmax(30px, 50px);
+      }
+      .tecnologia {
+        width: 100%;
+        background: $gc;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        &:hover {
+          .tecnologia-hidden {
+            top: 0%;
+            transition: all 0.3s linear;
+            h4 {
+              font-size: 1rem;
+              @include telefono {
+                font-size: 12px;
+              }
+            }
+          }
         }
-        .contenedor-imgs {
-            @include grid(8, 2rem);
-            grid-auto-rows: minmax(50px, 100px);
-            @include desktop {
-                @include grid(6, 2rem);
+        .tecnologia-hidden {
+          @include flex(column);
+          padding: 1rem;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 100%;
+          background-color: rgba(0, 0, 0, 0.9);
+          @include telefono {
+            p {
+              display: none;
             }
-            @include tablet {
-                @include grid(4, 1rem);
-            }
-            @include telefono {
-                @include grid(4, 1rem);
-                grid-auto-rows: minmax(30px, 50px);
-            }
-            .tecnologia {
-                width: 100%;
-                background: $gc;
-                position: relative;
-                overflow: hidden;
-                border-radius: 1rem;
-                &:hover {
-                    .tecnologia-hidden {
-                        top: 0%;
-                        transition: all 0.3s linear;
-                    }
-                }
-                .tecnologia-hidden {
-                    @include flex(column);
-                    padding: 1rem;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 100%;
-                    background-color: rgba(0, 0, 0, 0.9);
-                    @include telefono {
-                        p {
-                            display: none;
-                        }
-                    }
-                }
-                &.html {
-                    background-image: url("../../img/html5fondo.jpg");
-                    background-size: cover;
-                    background-position: center;
-                }
-                &.git {
-                    background-image: url("../../img/git.png");
-                    background-size: cover;
-                    background-position: center;
-                }
-                &.mysql {
-                    background-image: url("../../img/mysql.png");
-                    background-size: cover;
-                    background-position: center;
-                }
-                &.python {
-                    background-image: url("../../img/python.png");
-                    background-size: cover;
-                    background-position: center;
-                }
-                &.sass {
-                    background-image: url("../../img/imgsas.png");
-                    background-size: cover;
-                    background-position: center;
-                }
-                &.webpack {
-                    background-image: url("../../img/webpack.png");
-                    background-size: cover;
-                    background-position: center;
-                }
-                &.js {
-                    background-image: url("../../img/javascript.png");
-                    background-size: cover;
-                    background-position: center;
-                }
-                &.css {
-                    background-image: url("../../img/css3.png");
-                    background-size: cover;
-                    background-position: center;
-                }
-            }
+          }
         }
+        &.html {
+          background-image: url("../../img/html5fondo.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+        &.git {
+          background-image: url("../../img/git.png");
+          background-size: cover;
+          background-position: center;
+        }
+        &.firebase {
+          background-image: url("../../img/firebase.png");
+          background-size: cover;
+          background-position: center;
+        }
+        &.react {
+          background-image: url("../../img/react.png");
+          background-size: cover;
+          background-position: center;
+        }
+        &.sass {
+          background-image: url("../../img/imgsas.png");
+          background-size: cover;
+          background-position: center;
+        }
+        &.webpack {
+          background-image: url("../../img/webpack.png");
+          background-size: cover;
+          background-position: center;
+        }
+        &.js {
+          background-image: url("../../img/javascript.png");
+          background-size: cover;
+          background-position: center;
+        }
+        &.css {
+          background-image: url("../../img/css3.png");
+          background-size: cover;
+          background-position: center;
+        }
+      }
     }
+  }
 }

@@ -1,186 +1,212 @@
 // ESTILOS MENU
 body {
-    background: rgb(27, 0, 58);
-    background: radial-gradient(
-        circle,
-        rgba(27, 0, 58, 1) 19%,
-        rgba(0, 0, 0, 1) 89%
-    );
+  background: rgb(27, 0, 58);
+  background: radial-gradient(
+    circle,
+    rgba(27, 0, 58, 1) 19%,
+    rgba(0, 0, 0, 1) 89%
+  );
 }
 .menu-principal {
-    z-index: 9999;
-    padding: 0 1rem;
-    background: rgb(27, 0, 58);
-    background: radial-gradient(
+  z-index: 9999;
+  padding: 0 1rem;
+  background: rgb(27, 0, 58);
+  background: radial-gradient(
+    circle,
+    rgba(27, 0, 58, 1) 19%,
+    rgba(0, 0, 0, 1) 89%
+  );
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .contenedor-menu {
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet {
+      justify-content: space-around;
+      div.enlaces-menu {
+        display: none;
+      }
+      div.menu-hamburguesa {
+        display: flex;
+        cursor: pointer;
+      }
+    }
+    .logo {
+      display: inline-block;
+      text-align: center;
+      width: auto;
+      h1 {
+        letter-spacing: 3px;
+        margin: 0;
+        width: auto;
+        cursor: pointer;
+        color: $bl;
+        &:hover {
+          transform: scale(1.1);
+          color: $gc;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    .menu-hamburguesa {
+      display: none;
+      i {
+        font-size: 30px;
+        color: $bl;
+      }
+    }
+    .enlaces-menu {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        &:hover {
+          transform: scale(1.1);
+          color: rgba(74, 15, 236, 1);
+          transition: all 0.3s ease;
+        }
+        border-radius: 60px;
+        text-decoration: none;
+        color: $bl;
+        font-size: 18px;
+        padding: 1rem;
+      }
+    }
+    .btn-cerrar {
+      display: none;
+    }
+    .active {
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      background: rgb(27, 0, 58);
+      background: radial-gradient(
         circle,
         rgba(27, 0, 58, 1) 19%,
         rgba(0, 0, 0, 1) 89%
-    );
-    opacity: 1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    .contenedor-menu {
-        width: 80%;
-        margin: 0 auto;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        @include tablet {
-            justify-content: space-around;
-            div.enlaces-menu {
-                display: none;
-            }
-            div.menu-hamburguesa {
-                display: flex;
-                cursor: pointer;
-            }
-        }
-        .logo {
-            display: inline-block;
-            text-align: center;
-            width: auto;
-            h1 {
-                letter-spacing: 3px;
-                margin: 0;
-                width: auto;
-                cursor: pointer;
-                color: $bl;
-                &:hover {
-                    transform: scale(1.1);
-                    color: $gc;
-                    transition: all 0.3s ease;
-                }
-            }
-        }
-        .menu-hamburguesa {
-            display: none;
-            i {
-                font-size: 30px;
-                color: $bl;
-            }
-        }
-        .enlaces-menu {
-            width: 60%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            a {
-                &:hover {
-                    transform: scale(1.1);
-                    color: rgba(74, 15, 236, 1);
-                    transition: all 0.3s ease;
-                }
-                border-radius: 60px;
-                text-decoration: none;
-                color: $bl;
-                font-size: 18px;
-                padding: 1rem;
-            }
-        }
+      );
+      width: 100vw;
+      min-height: 50vh;
+      padding: 1rem 0;
+      .btn-cerrar {
+        margin-top: 1rem;
+        display: block;
+        background-color: $mc;
+        border: 0;
+        color: $bl;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
     }
-    //FIN ESTILOS MENU
+  }
+  //FIN ESTILOS MENU
 
-    //INICIO ESTILOS PRESENTACION
+  //INICIO ESTILOS PRESENTACION
 }
 .contenido-presentacion {
-    position: relative;
-    z-index: 9998;
-    @include flex(row);
+  position: relative;
+  z-index: 9998;
+  @include flex(row);
 
-    color: $bl;
-    min-height: 100vh;
-    h2 {
-        margin: 0;
+  color: $bl;
+  min-height: 100vh;
+  h2 {
+    margin: 0;
+  }
+  .presentacion {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    min-height: 100%;
+    @include desktop {
+      flex-direction: column-reverse;
+      gap: 0;
+      .nombre-descripcion,
+      .foto-profesion {
+        min-width: 100%;
+      }
     }
-    .presentacion {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 5rem;
-        min-height: 100%;
-        @include desktop {
-            flex-direction: column-reverse;
-            gap: 0;
-            .nombre-descripcion,
-            .foto-profesion {
-                min-width: 100%;
-            }
-        }
-        .nombre-descripcion,
-        .foto-profesion {
-            border-radius: 1rem;
-            height: 75%;
-            width: 50%;
-        }
-
-        div.foto-profesion {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            margin-top: 5rem;
-
-            .contenedor-foto {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                padding: 15px;
-                background-image: url($url);
-                background-size: cover;
-            }
-            .contenedor-profesion {
-                padding: 1rem;
-                border-radius: 2rem;
-                border: 1px solid rgba(255, 255, 255, 0.6);
-                background-color: rgba(255, 255, 255, 0.1);
-                backdrop-filter: blur(100px);
-                box-shadow: 1px 4px 8px grey,
-                    -1px 0px 8px rgba(61, 61, 61, 0.582);
-                h3 {
-                    font-size: 30px;
-                    text-align: center;
-                    margin: 0;
-                }
-            }
-        }
-        .nombre-descripcion {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3 {
-                font-size: 30px;
-                color: $ml;
-            }
-        }
+    .nombre-descripcion,
+    .foto-profesion {
+      border-radius: 1rem;
+      height: 75%;
+      width: 50%;
     }
+
+    div.foto-profesion {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      margin-top: 5rem;
+
+      .contenedor-foto {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 15px;
+        background-image: url($url);
+        background-size: cover;
+      }
+      .contenedor-profesion {
+        padding: 1rem;
+        border-radius: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(100px);
+        box-shadow: 1px 4px 8px grey, -1px 0px 8px rgba(61, 61, 61, 0.582);
+        h3 {
+          font-size: 30px;
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+    .nombre-descripcion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        font-size: 30px;
+        color: $ml;
+      }
+    }
+  }
 }
 //particle js
 #particles-js {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    min-width: 100%;
-    z-index: -2;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  z-index: -2;
 }
 .prueba {
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .tecno-typed {
-    font-weight: bold;
-    color: #4a0fec;
+  font-weight: bold;
+  color: #4a0fec;
 }
 .typed strong {
-    color: #4a0fec;
+  color: #4a0fec;
 }
