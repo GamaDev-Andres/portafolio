@@ -27,10 +27,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     @include tablet {
       justify-content: space-around;
       div.enlaces-menu {
-        display: none;
+        transform: translateY(-100%);
+        position: fixed;
+        top: 0;
+        transition: transform 0.3s linear;
+        display: flex !important;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        background: rgb(27, 0, 58);
+        background: radial-gradient(
+          circle,
+          rgba(27, 0, 58, 1) 19%,
+          rgba(0, 0, 0, 1) 89%
+        );
+        width: 100vw;
+        min-height: 50vh;
+        padding: 1rem 0;
       }
       div.menu-hamburguesa {
         display: flex;
@@ -84,19 +101,9 @@ body {
       display: none;
     }
     .active {
-      display: flex !important;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      background: rgb(27, 0, 58);
-      background: radial-gradient(
-        circle,
-        rgba(27, 0, 58, 1) 19%,
-        rgba(0, 0, 0, 1) 89%
-      );
-      width: 100vw;
-      min-height: 50vh;
-      padding: 1rem 0;
+      transform: translateY(0%) !important;
+      transition: transform 0.3s linear;
+
       .btn-cerrar {
         margin-top: 1rem;
         display: block;
