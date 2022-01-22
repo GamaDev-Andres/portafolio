@@ -11,11 +11,9 @@
           .descripcion-proyecto {
             transform: translateY(0%);
             background-color: rgba($ng, 0.5);
-            // transition: all 0.3s ease;
             p {
               transform: translateY(0%);
             }
-            // top: 50%;
           }
         }
       }
@@ -55,7 +53,6 @@
             transition: background-color 300ms;
             &:hover {
               background-color: $mo;
-              // color: $ml;
             }
           }
         }
@@ -63,11 +60,8 @@
       .imagen-proyecto {
         position: relative;
         @include flex(row);
-        min-height: 70%;
         img {
-          object-fit: contain;
-          //   width: 100%;
-          //   height: 100%;
+          object-fit: cover;
         }
         .descripcion-proyecto {
           position: absolute;
